@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单搜索 -->
+    <p>
+        百度搜索
+    </p>
+    <form action="https://baidu.com/s" target="_blank">
+        <input type="text" name="wd">
+        <button>搜索</button>
+    </form>
+    <hr>
+    <p>京东搜索</p>
+    <form action="https://search.jd.com/search" target="_self">
+        <input type="text" name="search">
+        <button>搜索</button>
+    </form>
+    <hr>
+    <!-- 表单控件 -->
+    <!-- 要显示属性必须有一个wd -->
+    <form action="https://baidu.com/s" target="_blank">
+        <fieldset>
+            <legend>主要</legend>
+                <label>用户名：<input type="text" name="username" value="" maxlength="50"><br></label>
+            <label for="mima">密码</label>
+            <input type="password" name="pwd" value="" maxlength="20" id="mima"><br>
+            <!-- 单选框 -->
+            性别：
+                <label>
+                    男<input type="radio" name="sex" value="male" checked>
+                </label>
+                <label>
+                    女<input type="radio" name="sex" value="fmale" ><br>
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>次要</legend>
+                <!-- 多选框 -->
+            爱好：
+            <label>
+            <input type="checkbox" name="hobby" value="1">1
+            </label>
+            <input type="checkbox" name="hobby" value="2" id="22">
+            <label for="22">2</label>
+            <input type="checkbox" name="hobby" value="3" id="23">
+            <label for="23">3</label>
+            <br>
+            <!-- 文本框 -->
+            备注：
+            <label for="text"></label>
+            <textarea id="text" name="wd" cols="30" rows="2"></textarea><br>
+                <!-- 下拉框 -->
+            省份:<select name="where" >
+                <option value="闽" selected>福建</option>
+                <option value="粤" >广东</option>
+                <option value="京" >北京</option>
+            </select><br>
+        </fieldset>
+        <!-- 隐藏域 -->
+          <input type="hidden" name="tag" value="form">
+        
+        <!-- 确认键 -->
+        <input type="submit" value="请确认">
+        <span>    </span>
+        <button>确认</button><br>
+        <!-- 重置键 -->
+        <input type="reset" value="请重置">
+        <span>   </span>
+        <button type="reset">重置</button><br>
+        <!-- 普通按钮 -->
+        <button type="button">普通按钮</button>
+    </form>
+
+</body>
+</html>
